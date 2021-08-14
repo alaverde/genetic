@@ -5,14 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genetic</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
 
-    <input id="nombre" type="text" value="ANGIE STEFANIA"></input>
+    <div class="centrar title">
+        <h1>Algoritmo Genético</h1>
+    </div>
+    <div class="conf centrar" style="">
+        <div>
+            <p>Cantidad de iteraciones</p>
+            <input id="cantidad" type="number" value="4000">
+            <p></p>
+            <p>Probabilidad de mutación</p>
+            <input id="probMut" type="number" value="0.3">
+        </div>
+        <div>
+            <p>Probabiliad de cruce</p>
+            <input id="probCruc" type="number" value="0.3">
+            <p></p>
+            <p>Saltos para mostrar resultados</p>
+            <input id="skip" type="number" value="20">
+        </div>
+    </div>
+    <div class=" input-box centrar">
+        <input class="input-name" id="nombre" type="text" value="ANGIE STEFANIA"></input>
 
-    <button id="start">Iniciar</button>
+        <button class="start-button" id="start">Iniciar</button>    
+    </div>
+    
+    <table class="table centrar" id="resultado" border="0" width="80%">
+        <thead>
+            <tr>
+                <th># Generación</th>
+                <th>Aptitud individuo</th>
+                <th>Cadena</th>
+            </tr>
+        </thead>
+        <tbody style="font-family: monospace;">
+        </tbody>
+    </table>
     
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./assets/js/lib/genetic.js"></script>
     <script src="./index.js"></script>
 </body>

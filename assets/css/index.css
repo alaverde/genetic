@@ -1,0 +1,40 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+td{
+    text-align: center;
+}
+
+.conf {
+    width:50%;
+    text-align:center;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.input-box {
+    width: 20%;
+}
+
+.title {
+    text-align: center;
+}
+
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    border: 1px solid blue;
+    border-radius: 0;
+    font-size: large;
+}
+
+.start-button{
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: large;
+}
